@@ -16,6 +16,11 @@ hr {
   display: none;
 } /* rimuove l'elemento */
 
+.toRelative {
+  position: relative;
+  white-space: nowrap;
+}
+
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
@@ -202,6 +207,54 @@ h1 + p {
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 3.6rem;
+  }
+  .underline {
+    /* aggiunto */
+    position: absolute;
+    left: 15%;
+    top: 6%;
+    z-index: 0;
+  }
+  .fixed_bottom {
+    /*aggiunto*/
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    background-color: rgb(246, 247, 240, 0.5);
+    width: 5%;
+    text-align: center;
+    padding: 0.5%;
+    border-radius: 15px;
+    border: 2px solid white;
+    z-index: 4;
+  }
+
+  .fixed_top {
+    /*aggiunto*/
+    position: fixed;
+    top: 1%;
+    right: -1%;
+    background-color: rgb(246, 247, 240, 0.5);
+    width: 5%;
+    text-align: center;
+    padding: 0.5%;
+    border-radius: 15px;
+    border: 2px solid white;
+    z-index: 4;
+  }
+
+  .fixed_top1 {
+    /*aggiunto*/
+    position: fixed;
+    top: 10%;
+    right: -1%;
+    background-color: rgb(246, 247, 240, 0.5);
+    width: 5%;
+    text-align: center;
+    padding: 0.5%;
+    border-radius: 15px;
+    border: 2px solid white;
+    z-index: 4;
   }
 }
 
